@@ -59,7 +59,7 @@ class Hamburger {
     calculatePrice () {
         let arr = this.toppines;
         let fullPrice = this.size.price + this.stuffing.price;
-        arr.forEach((item) => fullPrice += item.calories);
+        arr.forEach((item) => fullPrice += item.price);
         return fullPrice;
     }
 }
@@ -114,4 +114,5 @@ do {
                 break;
         }
     } while (chek);
+    console.log(hamburger.toppines);
 } while (confirm("Створити нове замовлення ?"));
